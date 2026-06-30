@@ -1,6 +1,7 @@
 import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
 import { ProjectCard } from "./projectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import liquiShieldImg from "../assets/img/project-liquishieldimg.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
@@ -17,6 +18,27 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
     const projectsTabOne = [
+        {
+            title: "LIQUISHIELD",
+            description: "An AI-driven stress-testing command center that utilizes NLP and Facebook Prophet to predict global bank runs and dynamically forecast 30-day liquidity crises.",
+            techStack: [
+              "Next.js", 
+              "React", 
+              "Tailwind CSS", 
+              "Vercel", 
+              "Python", 
+              "FastAPI", 
+              "Docker", 
+              "Facebook Prophet", 
+              "Hugging Face", 
+              "NLP", 
+              "AWS Aurora", 
+              "PostgreSQL"
+            ],
+            imgUrl: liquiShieldImg,
+            githubUrl: "https://github.com/Samyra312007/LiquiShield", 
+            liveUrl: "https://liqui-shield.vercel.app/",
+        },
         {
             title: "3D PACKING OPTIMIZER",
             description: "An automated logistics engine running an optimized layer-building heuristic to maximize cargo container volume density in under 2 seconds.",
